@@ -11,8 +11,10 @@ $(document).on("change", "input[type=checkbox]",
             // console.log($(this).parent());
             // thisはinput,this.parentはliタグを指している。
             $(this).parent().css("text-decoration", "line-through");
+            $(this).parent().css("color", "#ccc");
         }else{
-            $(this).parent().css("text-decoration", "none");  
+            $(this).parent().css("text-decoration", "none"); 
+            $(this).parent().css("color", "#000"); 
         }
     }
 );
